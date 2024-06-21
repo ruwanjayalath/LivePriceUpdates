@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34526.213
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amega.LivePriceUpdates.API", "src\Application\Amega.LivePriceUpdates.API\Amega.LivePriceUpdates.API.csproj", "{52048750-AC5E-4B30-9967-DD15C369F535}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{8B21CEC6-44F9-4D51-AA43-EF7C468FB6FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1B7731E2-8280-4CB4-8FDC-E8F1767FE708}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{158DBF65-F349-4083-B040-5A231716490A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{5CD69F3D-2940-4B35-A087-A97BFA14DACC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amega.LivePriceUpdates.Core", "src\Core\Amega.LivePriceUpdates.Core\Amega.LivePriceUpdates.Core.csproj", "{26049AD8-D134-480C-9B44-47E9845D26F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amega.LivePriceUpdates.Contracts", "src\Domain\Amega.LivePriceUpdates.Contracts\Amega.LivePriceUpdates.Contracts.csproj", "{C5EBDEE4-67A0-4469-BD0A-5362913F470A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{357CEEF2-9AFB-428C-938F-DAB76190C223}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amega.LivePriceUpdates.Core.UnitTests", "src\Tests\Amega.LivePriceUpdates.Core.UnitTests\Amega.LivePriceUpdates.Core.UnitTests.csproj", "{53E08D6D-9924-4FF4-B732-C81498BB0F5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amega.LivePriceUpdates.API.LoadTests", "src\Tests\Amega.LivePriceUpdates.API.LoadTests\Amega.LivePriceUpdates.API.LoadTests.csproj", "{1DC84AA9-F44B-4306-B4B9-87A29E4129DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amega.LivePriceUpdates.Providers", "src\Infrastructure\Amega.LivePriceUpdates.Providers\Amega.LivePriceUpdates.Providers.csproj", "{34F3709D-D777-43CE-9BFE-7BEF7553C248}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52048750-AC5E-4B30-9967-DD15C369F535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52048750-AC5E-4B30-9967-DD15C369F535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52048750-AC5E-4B30-9967-DD15C369F535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52048750-AC5E-4B30-9967-DD15C369F535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26049AD8-D134-480C-9B44-47E9845D26F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26049AD8-D134-480C-9B44-47E9845D26F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26049AD8-D134-480C-9B44-47E9845D26F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26049AD8-D134-480C-9B44-47E9845D26F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5EBDEE4-67A0-4469-BD0A-5362913F470A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5EBDEE4-67A0-4469-BD0A-5362913F470A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5EBDEE4-67A0-4469-BD0A-5362913F470A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5EBDEE4-67A0-4469-BD0A-5362913F470A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E08D6D-9924-4FF4-B732-C81498BB0F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E08D6D-9924-4FF4-B732-C81498BB0F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E08D6D-9924-4FF4-B732-C81498BB0F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E08D6D-9924-4FF4-B732-C81498BB0F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC84AA9-F44B-4306-B4B9-87A29E4129DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC84AA9-F44B-4306-B4B9-87A29E4129DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC84AA9-F44B-4306-B4B9-87A29E4129DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC84AA9-F44B-4306-B4B9-87A29E4129DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F3709D-D777-43CE-9BFE-7BEF7553C248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F3709D-D777-43CE-9BFE-7BEF7553C248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F3709D-D777-43CE-9BFE-7BEF7553C248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F3709D-D777-43CE-9BFE-7BEF7553C248}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52048750-AC5E-4B30-9967-DD15C369F535} = {8B21CEC6-44F9-4D51-AA43-EF7C468FB6FB}
+		{26049AD8-D134-480C-9B44-47E9845D26F0} = {1B7731E2-8280-4CB4-8FDC-E8F1767FE708}
+		{C5EBDEE4-67A0-4469-BD0A-5362913F470A} = {158DBF65-F349-4083-B040-5A231716490A}
+		{53E08D6D-9924-4FF4-B732-C81498BB0F5D} = {357CEEF2-9AFB-428C-938F-DAB76190C223}
+		{1DC84AA9-F44B-4306-B4B9-87A29E4129DD} = {357CEEF2-9AFB-428C-938F-DAB76190C223}
+		{34F3709D-D777-43CE-9BFE-7BEF7553C248} = {5CD69F3D-2940-4B35-A087-A97BFA14DACC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7116B4A9-8E35-4882-89F1-77659DECD63B}
+	EndGlobalSection
+EndGlobal
