@@ -14,5 +14,6 @@ namespace Amega.LivePriceUpdates.Contracts.Configuration
         public string GlobalQuoteAPIUrl { get; set; }
         public string CEXWebsocketUrl { get; set; }
         public int CEXKeepAliveInterval { get; set; }
+        public int AlphaVantagePollingIntervalInMins { get; set; }
     }
 }

@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "a9ad62ad-f1f6-4993-b6a2-f0dbd5ab36ad",
+		"name": "Amega Live Price Service Rest endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11592300"
+	},
+	"item": [
+		{
+			"name": "Amega GetLiveQuotes Single",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"BTCUSD\"]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5273/api/PriceQuotes/GetQuotes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5273",
+					"path": [
+						"api",
+						"PriceQuotes",
+						"GetQuotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Amega GetLiveQuotes Multiple",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"BTCUSD\",\"EURUSD\",\"USDJPY\"]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5273/api/PriceQuotes/GetQuotes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5273",
+					"path": [
+						"api",
+						"PriceQuotes",
+						"GetQuotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Amega GetSupportedSymbols Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5273/api/PriceQuotes/GetSupportedSymbols",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5273",
+					"path": [
+						"api",
+						"PriceQuotes",
+						"GetSupportedSymbols"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

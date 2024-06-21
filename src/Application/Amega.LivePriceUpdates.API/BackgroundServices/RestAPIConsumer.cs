@@ -1,6 +1,8 @@
-﻿using Amega.LivePriceUpdates.Contracts.Interfaces;
+﻿using Amega.LivePriceUpdates.Contracts.Configuration;
+using Amega.LivePriceUpdates.Contracts.Interfaces;
 using Amega.LivePriceUpdates.Core.Services;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace Amega.LivePriceUpdates.API.BackgroundServices
 {
@@ -9,14 +11,17 @@ namespace Amega.LivePriceUpdates.API.BackgroundServices
         private IServiceProvider _serviceProvider;
         private readonly ILogger<RestAPIConsumer> _logger;
         private readonly IEnumerable<ILiveDataRestProvider> _restDataProviders;
+        private readonly ProviderConfiguration _providerConfiguration;
 
         public RestAPIConsumer(ILogger<RestAPIConsumer> logger
             , IServiceProvider serviceProvider
-            , IEnumerable<ILiveDataRestProvider> restDataProviders)
+            , IEnumerable<ILiveDataRestProvider> restDataProviders
+            , IOptions<ProviderConfiguration> options)
         {
             _logger = logger;
             _serviceProvider = serviceProvider;
             _restDataProviders = restDataProviders;
+            _providerConfiguration = options.Value;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -44,7 +49,7 @@ namespace Amega.LivePriceUpdates.API.BackgroundServices
                             await scopedPriceEventService.UpdateCache(results);
                         }
 
-                        await Task.Delay(TimeSpan.FromMinutes(10), stoppingToken);
+                        await Task.Delay(TimeSpan.FromMinutes(_providerConfiguration.AlphaVantagePollingIntervalInMins), stoppingToken);
                     }
 
                     //Stop
